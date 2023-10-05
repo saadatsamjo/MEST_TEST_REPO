@@ -1,2 +1,2 @@
-# MEST_TEST_REPO
-MEST TEST REPO
+
+this is a test repo. For MEST EIT's tech training
