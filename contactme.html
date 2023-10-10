@@ -3,20 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MEST test</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <title>Contact Me</title>
 </head>
 
-<header id="header">
-    <ul>
-        <li> <a href="index.html"> Home</a></li>
-        <li> <a href="about.html">About me</a></li>
-        <li> <a href="skills.html">My Skills</a></li>
-        <li> <a href="potfolio.html">My Portfolio</a></li>
-        <li> <a href="contactme.html">Contact me</a></li>
-    </ul>
-</header>
-
 <body>
-    <h1 class="main-text">This is the <u>CONTACT ME</u> page for my website</h1>
+    <div class="main_container">
+        <header id="header">
+            <a href="index.html"><img id="dp" src="assets/images/dp.png" alt=""></a>
+            <ul id="menu_items">
+                <li> <a href="index.html">Home</a></li>
+                <li> <a href="about.html">About me</a></li>
+                <li> <a href="skills.html">My Skills</a></li>
+                <li> <a href="potfolio.html">My Portfolio</a></li>
+                <li> <a href="contactme.html">Contact me</a></li>
+            </ul>
+        </header>
+
+        <div class="content">
+            <div class="form_container">
+                <h1 id="form_header">Contact Me</h1>
+                        <form action="process_form.php" method="POST">
+                            <label class="form_label" for="name">Your Name:</label>
+                            <input class="form_input" type="text" id="name" name="name" required>
+                    
+                            <label class="form_label" for="email">Your Email:</label>
+                            <input class="form_input" type="email" id="email" name="email" required>
+
+                            <label class="form_label" for="company">Company:</label>
+                            <input class="form_input" type="text" id="company" name="company" required>
+                    
+                            <label class="form_label" for="message">Message:</label>
+                            <textarea  class="form_input" id="message" name="message" rows="6" required></textarea>
+                    
+                            <div id="button_div">
+                                <button id="contact_button" type="submit">Send message</button>
+                            </div>
+                        </form>
+               </div>
+        </div>
+    </div>
+    
 </body>
 </html>
